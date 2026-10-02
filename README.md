@@ -59,4 +59,41 @@ sudo ./mythic-cli install folder /path/to/openai_file
 sudo ./mythic-cli c2 start openai_file
 ```
 
-Protocol details for payload integration are in `documentation-c2/openai_file/_index.md`.
+# openai_file
+
+## Transport
+
+Agents and the listener exchange OpenAI Files API `.jsonl` files using `purpose=batch`.
+
+Request filename:
+
+```text
+<request_prefix>_<channel_id>_<request_id>.jsonl
+```
+
+Response filename:
+
+```text
+<response_prefix>_<channel_id>_<request_id>.jsonl
+```
+
+Default request prefix is `mythic_to_server`; default response prefix is `mythic_to_agent`; default channel is `mythic`.
+
+## JSONL Envelope
+
+Each file contains one or more JSON objects, one per line:
+
+```json
+{"v":1,"profile":"openai_file","channel":"mythic","direction":"request","id":"req_001","alg":"aes-256-cbc-hmac-sha256+base64url","nonce":"...","ciphertext":"...","created_at":0}
+```
+
+`ciphertext` is AES-256-CBC output with a trailing HMAC-SHA256 tag over the raw Mythic message bytes. `nonce` is the CBC IV. `nonce` and `ciphertext` are unpadded base64url. AAD is:
+
+```text
+v|profile|channel|direction|id|alg
+```
+
+For example:
+
+```text
+1|openai_file|mythic|request|req_001|aes-256-cbc-hmac-sha256+base64url
