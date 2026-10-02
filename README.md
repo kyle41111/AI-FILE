@@ -1,6 +1,6 @@
-# openai_file
+# AI_file
 
-`ai_file` is a Mythic C2 profile that pushes implant comms through the OpenAI Files API instead of an HTTP/S listener.
+`ai_file` is a Mythic C2 profile that pushes implant comms through the ChatGPT File API instead of an HTTP/S listener.
 
 The listener polls `/v1/files` for `.jsonl` files with `purpose=batch`, decrypts each request envelope locally, forwards the raw Mythic message bytes to Mythic's `/agent_message`, encrypts Mythic's response, and uploads a response `.jsonl` file back to the Files API.
 
