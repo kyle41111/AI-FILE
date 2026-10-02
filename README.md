@@ -5,16 +5,16 @@ ai_file is a Mythic C2 profile that uses the documented OpenAI Files API to exch
 
 The listener polls `/v1/files` for `.jsonl` files with `purpose=batch`, decrypts each request envelope locally, forwards the raw Mythic message bytes to Mythic's `/agent_message`, encrypts Mythic's response, and uploads a response `.jsonl` file back to the Files API.
 
-<img width="2255" height="937" alt="image" src="https://github.com/user-attachments/assets/285e8889-1738-4cc4-ba07-c8b618131d3a" />
+<img width="2255" height="937" alt="image" src="https://github.com/user-attachments/assets/285e8889-1738-4cc4-ba07-c8b618131d3a" /> \
 
 
 
-<img width="1010" height="767" alt="image" src="https://github.com/user-attachments/assets/bd564bbc-fa4a-451f-987f-931410fd97e3" />
+<img width="1010" height="767" alt="image" src="https://github.com/user-attachments/assets/bd564bbc-fa4a-451f-987f-931410fd97e3" /> \
 
 
 
 
-<img width="835" height="155" alt="image" src="https://github.com/user-attachments/assets/51a1b8d9-8696-44ff-a604-bff31a78800d" />
+<img width="835" height="155" alt="image" src="https://github.com/user-attachments/assets/51a1b8d9-8696-44ff-a604-bff31a78800d" /> \
 
 
 
