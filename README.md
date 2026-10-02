@@ -17,8 +17,14 @@ The listener polls `/v1/files` for `.jsonl` files with `purpose=batch`, decrypts
 <img width="835" height="155" alt="image" src="https://github.com/user-attachments/assets/51a1b8d9-8696-44ff-a604-bff31a78800d" /> \
 
 
+## Install
 
+From the Mythic directory:
 
+```bash
+sudo ./mythic-cli install folder /path/to/openai_file
+sudo ./mythic-cli c2 start openai_file
+```
 ## Listener Configuration
 
 Edit `C2_Profiles/openai_file/openai_file/c2_code/config.json` before starting the profile:
@@ -49,17 +55,6 @@ Edit `C2_Profiles/openai_file/openai_file/c2_code/config.json` before starting t
 ```
 
 Required values are `api_key`, `transport_key`, and a matching `channel_id` between the listener and payload profile config. `transport_key` can be `base64:<32 raw bytes>` or a high-entropy passphrase; passphrases are SHA-256 derived before envelope encryption use.
-
-## Install
-
-From the Mythic directory:
-
-```bash
-sudo ./mythic-cli install folder /path/to/openai_file
-sudo ./mythic-cli c2 start openai_file
-```
-
-# openai_file
 
 ## Transport
 
