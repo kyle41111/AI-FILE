@@ -1,0 +1,36 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- File API window -->
+  <rect x="10" y="20" width="180" height="160" rx="8" fill="none" stroke="#2196F3" stroke-width="4"/>
+  
+  <!-- Browser title bar -->
+  <rect x="10" y="20" width="180" height="35" rx="8" fill="#2196F3" opacity="0.2"/>
+  <line x1="10" y1="55" x2="190" y2="55" stroke="#2196F3" stroke-width="4"/>
+  
+  <!-- Window control buttons -->
+  <circle cx="25" cy="37" r="5" fill="#FF5F56"/>
+  <circle cx="42" cy="37" r="5" fill="#FFBD2E"/>
+  <circle cx="59" cy="37" r="5" fill="#27C93F"/>
+  
+  <!-- Address bar -->
+  <rect x="20" y="70" width="160" height="40" rx="6" fill="none" stroke="#2196F3" stroke-width="3"/>
+  
+  <!-- File glyph -->
+  <g transform="translate(32, 82)">
+    <path d="M 0 0 H 14 L 22 8 V 28 H 0 Z" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 14 0 V 8 H 22" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- api text -->
+  <text x="62" y="96" font-family="monospace" font-size="20" font-weight="bold" fill="#2196F3">files</text>
+  
+  <!-- Cursor blink -->
+  <rect x="130" y="80" width="3" height="22" fill="#2196F3">
+    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Browser content area representation -->
+  <rect x="30" y="125" width="140" height="45" rx="3" fill="#2196F3" opacity="0.1"/>
+  <line x1="40" y1="138" x2="100" y2="138" stroke="#2196F3" stroke-width="2.5" opacity="0.3"/>
+  <line x1="40" y1="150" x2="140" y2="150" stroke="#2196F3" stroke-width="2.5" opacity="0.3"/>
+  <line x1="40" y1="162" x2="120" y2="162" stroke="#2196F3" stroke-width="2.5" opacity="0.3"/>
+</svg>

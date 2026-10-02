@@ -1,0 +1,22 @@
+{
+  "instances": [
+    {
+      "name": "default",
+      "api_key": "REPLACE_ME",
+      "base_url": "https://api.openai.com/v1",
+      "organization": "",
+      "project": "",
+      "purpose": "batch",
+      "channel_id": "mythic",
+      "request_prefix": "mythic_to_server",
+      "response_prefix": "mythic_to_agent",
+      "transport_key": "REPLACE_ME",
+      "poll_interval_seconds": 5,
+      "delete_processed_files": true,
+      "debug": true,
+      "max_file_bytes": 10485760,
+      "mythic_host": "",
+      "mythic_port": 0
+    }
+  ]
+}
