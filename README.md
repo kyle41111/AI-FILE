@@ -7,11 +7,14 @@ The listener polls `/v1/files` for `.jsonl` files with `purpose=batch`, decrypts
 <img width="2255" height="937" alt="image" src="https://github.com/user-attachments/assets/285e8889-1738-4cc4-ba07-c8b618131d3a" />
 
 
-<img width="1592" height="695" alt="image" src="https://github.com/user-attachments/assets/b7b5d93c-0d24-43ec-8026-17fce057792a" />
+
+<img width="1010" height="767" alt="image" src="https://github.com/user-attachments/assets/bd564bbc-fa4a-451f-987f-931410fd97e3" />
 
 
 
-<img width="472" height="110" alt="image" src="https://github.com/user-attachments/assets/9bd2292d-c21c-4f8b-bb02-e594c6e7e3c9" />
+
+<img width="835" height="155" alt="image" src="https://github.com/user-attachments/assets/51a1b8d9-8696-44ff-a604-bff31a78800d" />
+
 
 
 
