@@ -4,6 +4,12 @@
 
 The listener polls `/v1/files` for `.jsonl` files with `purpose=batch`, decrypts each request envelope locally, forwards the raw Mythic message bytes to Mythic's `/agent_message`, encrypts Mythic's response, and uploads a response `.jsonl` file back to the Files API.
 
+<img width="2255" height="937" alt="image" src="https://github.com/user-attachments/assets/285e8889-1738-4cc4-ba07-c8b618131d3a" />
+
+<img width="472" height="110" alt="image" src="https://github.com/user-attachments/assets/9bd2292d-c21c-4f8b-bb02-e594c6e7e3c9" />
+
+
+
 ## Listener Configuration
 
 Edit `C2_Profiles/openai_file/openai_file/c2_code/config.json` before starting the profile:
