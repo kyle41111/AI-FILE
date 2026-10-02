@@ -3,7 +3,7 @@
 ai_file is a Mythic C2 profile that uses the documented OpenAI Files API to exchange implant messages through jsonl files instead of a traditional HTTP/S listener. It relies on the Files API behavior defined by OpenAI in the official documentation: https://developers.openai.com/api/docs/guides/file-inputs?api-mode=responses.
 
 
-The listener polls `/v1/files` for `.jsonl` files with `purpose=batch`, decrypts each request envelope locally, forwards the raw Mythic message bytes to Mythic's `/agent_message`, encrypts Mythic's response, and uploads a response `.jsonl` file back to the Files API.
+The listener polls the `/v1/files` endpoint for `.jsonl` files with `purpose=batch`, decrypts each request envelope locally, forwards the raw Mythic message bytes to Mythic's `/agent_message`, encrypts Mythic's response, and uploads a response `.jsonl` file back to the Files API.
 
 <img width="2255" height="937" alt="image" src="https://github.com/user-attachments/assets/285e8889-1738-4cc4-ba07-c8b618131d3a" />
 
